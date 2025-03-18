@@ -45,7 +45,7 @@ const Navbar = () => {
 
 <div className=' sm:block md:block lg:block '>
       <div className='font-normal text-xs sm:text-sm ms:text:sm lg:text-sm xl:text-sm text-gray-600 flex items-center hover:opacity-70 duration-300 opacity-100 cursor-pointer'>
-        Login <span className='ml-2'><FontAwesomeIcon icon={faUser}/>  </span><span className=' m-2 text-gray-500 opacity-45 font-light border-l h-5 hidden sm:hidden md:hidden lg:block xl:block'>
+        Login <span className='ml-1'><FontAwesomeIcon icon={faUser}/>  </span><span className=' m-2 text-gray-500 opacity-45 font-light border-l h-5 hidden sm:hidden md:hidden lg:block xl:block'>
           
           </span>
       </div> 
