@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
    <nav>
-    <div className ="bg-[#feee00] p-1.5 pl-3 flex items-center  gap-5 ">
+    <div className ="bg-[#feee00] p-1.5 pl-3 flex items-center  gap-4 sm:gap-3 md:gap-4 lg:gap-6">
       {/* noon logo */}
      <span><img src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" className='h-12 w-21 cursor-pointer' alt="" /></span>
      {/* location */}
@@ -22,7 +22,7 @@ const Navbar = () => {
     {/* Search Bar */}
 
     <div className=''>
-      <input type="text" placeholder='What are you looking for?' className='bg-white rounded h-8.5 text-gray-600 text-sm w-95 sm:w-120 md:w-160 lg:w-185 xl:w-200 focus:outline-none p-3' />
+      <input type="text" placeholder='What are you looking for?' className='bg-white rounded h-8.5 text-gray-600 text-sm w-50 sm:w-120 md:w-160 lg:w-185 xl:w-200 focus:outline-none p-3' />
     </div> 
 
     {/* Language */}
@@ -55,7 +55,7 @@ const Navbar = () => {
 </div>
 
 {/* cartlogo */}
-<div className='hover:opacity-70 duration-300 opacity-100 cursor-pointer '>
+<div className='hover:opacity-70 duration-300 opacity-100 cursor-pointer hidden sm:hidden md:block  '>
   <img src={Cartlogo} alt="" />
 </div>
 
