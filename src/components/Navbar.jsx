@@ -12,14 +12,14 @@ const Navbar = () => {
     <>
    <nav>
     <div className ="bg-[#FFff] p-1.5 pl-3 flex items-center 
-     gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-9 sm:bg-[#ffff] md:bg-[#feee00] lg:bg-[#feee00] xl:bg-[#feee00]">
+     gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-6 sm:bg-[#ffff] md:bg-[#feee00] lg:bg-[#feee00] xl:bg-[#feee00]">
       {/* noon logo */}
      <span><img src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" className='h-10 w-18 cursor-pointer sm:h-9 sm:w-18  md:h-10 md:w-19  lg:h-12 lg:w-20 ' alt="" /></span>
      {/* location */}
-     <div className='  hidden sm:hidden text-sm font-[300] text-gray-600 gap-2 hover:opacity-70 cursor-pointer duration-300'>
+     <div className='  hidden sm:hidden md:hidden lg:flex lg:items-center  text-sm font-[300] text-gray-600 gap-2 hover:opacity-70 cursor-pointer duration-300'>
       <div><img src="https://t4.ftcdn.net/jpg/08/85/03/45/360_F_885034550_FL2YBZA2jjLYjLznnHFwqrSPjIhmzDub.jpg" className='h-4 rounded opacity-100 ' alt="" /></div>
       <div className='flex flex-col  items-start'>
-      <div className='font-normal text-sm'>Delever to</div>
+      <div className='font-normal text-sm'>Delever</div>
       <div className='font-bold '>Dubai</div>
       </div>
     </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
 <div className=' sm:block md:block lg:block '>
       <div className='font-normal text-xs sm:text-sm ms:text:sm lg:text-sm xl:text-sm text-gray-600 flex items-center hover:opacity-70 duration-300 opacity-100 cursor-pointer'>
-        Login <span className='ml-1'><FontAwesomeIcon icon={faUser}/>  </span><span className=' m-2 text-gray-500 opacity-45 font-light border-l h-5 hidden sm:hidden md:hidden lg:block xl:block'>
+        Login <span className='ml-1 hidden sm:hidden lg:hidden'><FontAwesomeIcon icon={faUser}/>  </span><span className=' m-2 text-gray-500 opacity-45 font-light border-l h-5 hidden sm:hidden md:hidden lg:block xl:block'>
           
           </span>
       </div> 
