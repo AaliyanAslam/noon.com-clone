@@ -4,7 +4,7 @@ import LocationLogo from "../assets/LocationLogo.png";
 const DeliveryLocationNav = () => {
   return (
     <>
-      <nav>
+      <nav className="block sm:block md:block lg:hidden xl:hidden 2xl:hidden">
         <div className="flex gap-2 items-center text-xs p-2">
           <div>
             <img src={LocationLogo} className="h-5 w-5" alt="" />
