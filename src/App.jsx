@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import NavProducts from './components/NavProducts'
 import BottomNav from './components/BottomNav'
 import DeliveryLocationNav from '/src/components/DeliveryLocationNav'
+import ExtraOffBanner from './components/ExtraOffBanner'
 
 const App = () => {
  
@@ -13,6 +14,7 @@ const App = () => {
     <NavProducts/>
     <BottomNav/>
     <DeliveryLocationNav/>
+    <ExtraOffBanner/>
     
     
     </>
