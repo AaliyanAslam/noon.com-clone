@@ -10,30 +10,30 @@ import CategoriesLogo from '/src/assets/CategoriesLogo.png'
 const BottomNav = () => {
   return (
     <>
-      <nav className="md">
+      <nav className="block sm:block ms:block lg:hidden xl:hidden">
         <div className="fixed bottom-0 w-full  ">
-          <ul className="flex items-center justify-between ">
+          <ul className="flex justify-around ">
             <div className="flex flex-col justify-center items-center">
-            <img src={HomeLogo} className="h-6 w-6" alt="" />
+            <img src={HomeLogo} className="h-6 w-6 opacity-80" alt="" />
 
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Home</li>
             </div>
             <div className="flex flex-col justify-center items-center">
-            <img src={CategoriesLogo}  className="h-6 w-6"alt="" />
+            <img src={CategoriesLogo}  className="h-6 w-6 opacity-80"alt="" />
 
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Categories</li>
             </div>
             <div className="flex flex-col justify-center items-center">
-                <img src={MoonLogo} className="h-6 w-6" alt="" />
+                <img src={MoonLogo} className="h-6 w-6 opacity-80" alt="" />
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Deals</li>
             </div>
            <div className="flex flex-col justify-center items-center">
-           <FontAwesomeIcon icon ={faUser}/>
+           <FontAwesomeIcon className="opacity-80" icon ={faUser}/>
            <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">My Account</li>
             </div> 
             <div className="flex flex-col justify-center items-center">
 
-            <img src={Cartlogo} className="h-5" alt="" />
+            <img src={Cartlogo} className="h-5 opacity-80" alt="" />
             <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Cart</li>
             </div>
           </ul>
