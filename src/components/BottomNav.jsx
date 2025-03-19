@@ -14,21 +14,21 @@ const BottomNav = () => {
         <div className="fixed bottom-0 w-full  ">
           <ul className="flex justify-around ">
             <div className="flex flex-col justify-center items-center">
-            <img src={HomeLogo} className="h-6 w-6 opacity-80" alt="" />
+            <img src={HomeLogo} className="h-5 w-5 opacity-80" alt="" />
 
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Home</li>
             </div>
             <div className="flex flex-col justify-center items-center">
-            <img src={CategoriesLogo}  className="h-6 w-6 opacity-80"alt="" />
+            <img src={CategoriesLogo}  className="h-5 w-5 opacity-80"alt="" />
 
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Categories</li>
             </div>
             <div className="flex flex-col justify-center items-center">
-                <img src={MoonLogo} className="h-6 w-6 opacity-80" alt="" />
+                <img src={MoonLogo} className="h-5 w-5 opacity-80" alt="" />
               <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">Deals</li>
             </div>
            <div className="flex flex-col justify-center items-center">
-           <FontAwesomeIcon className="opacity-80" icon ={faUser}/>
+           <FontAwesomeIcon className="opacity-80 h-5 w-5" icon ={faUser}/>
            <li className="text-xs sm:text-sm md:text-base lg:hidden xl:hidden">My Account</li>
             </div> 
             <div className="flex flex-col justify-center items-center">

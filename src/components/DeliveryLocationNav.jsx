@@ -4,8 +4,8 @@ import LocationLogo from '/src/assets/Locationlogo.png';
 const DeliveryLocationNav = () => {
   return (
     <>
-    <nav><div className='flex gap-2 items-center text-sm'>
-        <div><img src={LocationLogo} className='h-6 w-6' alt="" /></div>
+    <nav><div className='flex gap-2 items-center text-xs p-1'>
+        <div><img src={LocationLogo} className='h-5 w-5' alt="" /></div>
         <div className='font-light'>Deliver to <span className='font-bold text-gray-600'>Dubai</span></div>
         </div></nav></>
   )
