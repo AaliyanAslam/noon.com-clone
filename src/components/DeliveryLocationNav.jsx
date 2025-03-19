@@ -1,5 +1,5 @@
 import React from "react";
-import LocationLogo from "/src/assets/Locationlogo.png";
+import LocationLogo from "../assets/LocationLogo.png";
 
 const DeliveryLocationNav = () => {
   return (
