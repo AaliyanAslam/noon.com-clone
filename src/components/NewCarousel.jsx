@@ -63,14 +63,16 @@ const NewCarousel = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="min-w-full  relative bg-gradient-to-r from-pink-500 to-orange-500 flex items-center justify-center"
+                className="min-w-full  h-[200px] relative bg-gradient-to-r from-pink-500 to-orange-500 flex items-center justify-center"
               >
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-400 h object-contain opacity-90"
+                  className="w-full h-full object-cover opacity-90"
                 />
-               
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white rounded">
+                
+                </div>
               </div>
             ))}
           </div>
@@ -88,7 +90,7 @@ const NewCarousel = () => {
             →
           </button>
 
-          {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <div
                 key={index}
@@ -97,7 +99,7 @@ const NewCarousel = () => {
                 }`}
               />
             ))}
-          </div> */}
+          </div>
         </div>
 
         <div className="col-span-2 hidden sm:hidden md:block lg:flex xl:flex cursor-pointer">
