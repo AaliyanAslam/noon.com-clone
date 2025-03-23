@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
    <nav>
-    <div className ="bg-[#FFff] p-1.5 pl-3 flex items-center 
+    <div className ="bg-[#FFff] p-1.5 pl-3 flex items-center  justify-between
      gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-6 sm:bg-[#ffff] md:bg-[#feee00] lg:bg-[#feee00] xl:bg-[#feee00]">
       {/* noon logo */}
      <span><img src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg" className='h-10 w-18 cursor-pointer sm:h-9 sm:w-18  md:h-10 md:w-19  lg:h-12 lg:w-20 ' alt="" /></span>
