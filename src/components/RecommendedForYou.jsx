@@ -36,16 +36,14 @@ const RecommendedForYou = () => {
 
   return (
     <div className="w-full">
-      {/* Header Image */}
       <div className="container mx-auto px-4 py-4">
         <img 
           src="https://f.nooncdn.com/mpcms/EN0001/assets/1e06a839-ba31-4d5d-8638-29fed7d86d47.png" 
           alt="Recommended for you banner" 
-          className="w-full max-w-3xl mx-auto"
+          className="w-full  "
         />
       </div>
 
-      {/* Products Grid */}
       <div className="container mx-auto px-4 py-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
           {products.map((item) => (
