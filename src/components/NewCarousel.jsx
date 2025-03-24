@@ -63,12 +63,12 @@ const NewCarousel = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="min-w-full  h-[200px] relative bg-gradient-to-r from-pink-500 to-orange-500 flex items-center justify-center"
+                className=" container mx-auto min-w-full  rounded-2xl h-[200px] relative  flex items-center justify-center"
               >
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover opacity-90"
+                  className="w-full h-full rounded-2xl object-cover opacity-90"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white rounded">
                 
