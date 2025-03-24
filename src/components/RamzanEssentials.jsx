@@ -13,7 +13,7 @@ const RanzanEssentials = () => {
 
   return (
     <div className="container mx-auto px-4 py-6 bg-amber-200">
-      <div className="mb-6">
+      <div className="mb-5">
         <img 
           src="https://f.nooncdn.com/mpcms/EN0001/assets/17d29404-5361-45da-a39e-6bcdefbd8a1e.png" 
           alt="Ramzan Essentials Banner" 
@@ -21,7 +21,7 @@ const RanzanEssentials = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-4">
         {essentialsImages.map((imgSrc, index) => (
           <div 
             key={index} 
@@ -30,7 +30,7 @@ const RanzanEssentials = () => {
             <img 
               src={imgSrc} 
               alt={`Ramzan Essential ${index + 1}`} 
-              className="w-full h-auto object-contain"
+              className="h-auto w-auto "
             />
           </div>
         ))}

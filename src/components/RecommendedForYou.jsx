@@ -45,7 +45,9 @@ const RecommendedForYou = () => {
       </div>
 
       <div className="container mx-auto px-4 py-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+
+        
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
           {products.map((item) => (
             <div 
               key={item.title} 
@@ -53,7 +55,7 @@ const RecommendedForYou = () => {
             >
               <div className="relative overflow-hidden">
                 <img 
-                  className="w-full h-48 object-contain transform hover:scale-105 transition-transform duration-300" 
+                  className="w-full h-44 sm:h-44 md:h-48 lg:h-48 xl:h-48   object-contain transform hover:scale-105 transition-transform duration-600" 
                   src={item.img} 
                   alt={item.title}
                 />

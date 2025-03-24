@@ -3,7 +3,7 @@ import React from "react";
 const MegaDeals = () => {
   return (
     <div className="container mx-auto px-2 sm:px-4 py-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 place-items-center">
         {/* More Reasons to Shop */}
         <div className="col-span-1 sm:col-span-1 lg:col-span-4 bg-amber-200 p-2 rounded-lg">
           <img
@@ -26,7 +26,7 @@ const MegaDeals = () => {
                 <img
                   src={src}
                   alt={`Reason ${index + 1}`}
-                  className="w-full h-20 sm:h-24 md:h-28 lg:h-32 object-cover"
+                  className=""
                 />
               </div>
             ))}
@@ -55,7 +55,7 @@ const MegaDeals = () => {
                 <img
                   src={src}
                   alt={`Deal ${index + 1}`}
-                  className="w-full h-20 sm:h-24 md:h-28 lg:h-32 object-cover"
+                  className="h-40"
                 />
               </div>
             ))}
@@ -63,7 +63,7 @@ const MegaDeals = () => {
         </div>
 
         {/* In Focus */}
-        <div className="col-span-1 sm:col-span-1 lg:col-span-4 bg-amber-200 p-2 rounded-lg">
+        <div className="col-span-1 sm:col-span-1 lg:col-span-4  bg-amber-200 p-2 rounded-lg">
           <img
             src="https://f.nooncdn.com/mpcms/EN0002/assets/733bdc4a-5b38-459a-8b8d-79093afa0423.png"
             alt="In Focus Banner"
