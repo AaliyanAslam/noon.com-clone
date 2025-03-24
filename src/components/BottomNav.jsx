@@ -10,9 +10,9 @@ import CategoriesLogo from '/src/assets/CategoriesLogo.png'
 const BottomNav = () => {
   return (
     <>
-      <nav className="block sm:block ms:block lg:hidden xl:hidden">
+      <nav className="block   sm:block ms:block lg:hidden xl:hidden">
         <div className="fixed bottom-0 w-full  ">
-          <ul className="flex justify-around ">
+          <ul className="flex justify-around bg-white p-2 ">
             <div className="flex flex-col justify-center items-center">
             <img src={HomeLogo} className="h-5 w-5 opacity-80" alt="" />
 
