@@ -9,15 +9,16 @@ const RanzanEssentials = () => {
     "https://f.nooncdn.com/mpcms/EN0001/assets/7ca559bb-edae-4a13-b92c-f3c9bfc3756c.png",
     "https://f.nooncdn.com/mpcms/EN0001/assets/a1cf9227-c4f5-4e6e-9273-10779069e659.png",
     "https://f.nooncdn.com/mpcms/EN0001/assets/a4fb0365-e21f-4028-abd1-9e124995b02c.png",
+
   ];
 
   return (
-    <div className="container mx-auto px-4 py-6 bg-amber-200">
+    <div className="container mx-auto px-4 py-6 bg-amber-200 rounded">
       <div className="mb-5">
         <img 
           src="https://f.nooncdn.com/mpcms/EN0001/assets/17d29404-5361-45da-a39e-6bcdefbd8a1e.png" 
           alt="Ramzan Essentials Banner" 
-          className="w-full max-w-3xl mx-auto"
+          className="w-full  mx-auto"
         />
       </div>
 

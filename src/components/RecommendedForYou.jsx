@@ -51,11 +51,11 @@ const RecommendedForYou = () => {
           {products.map((item) => (
             <div 
               key={item.title} 
-              className="w-full max-w-sm mx-auto rounded-lg overflow-hidden shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+              className="w-full  max-w-sm mx-auto rounded-lg overflow-hidden shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="relative overflow-hidden">
                 <img 
-                  className="w-full h-44 sm:h-44 md:h-48 lg:h-48 xl:h-48   object-contain transform hover:scale-105 transition-transform duration-600" 
+                  className="w-full h-44 sm:h-44 md:h-48 lg:h-48 xl:h-60   object-cover transform hover:scale-105 transition-transform duration-600" 
                   src={item.img} 
                   alt={item.title}
                 />
