@@ -60,10 +60,10 @@ const categories = [
 
   return (
     <>
-  <div className=' gap-5 p-3 bg-amber-100 grid grid-cols-6 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-12 md:gap-2'>
+  <div className=' gap-2 p-3 bg-amber-100 grid grid-cols-6 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-12 md:gap-2'>
 
         {categories.map(item => {
-            return <img className='h-15 sm:h-17 md:h-25 lg:h-28 xl:h-32 2xl:h-33 cursor-pointer' key={item.id} src={item.path} alt="" />
+            return <img className='h-20 sm:h-17 md:h-25 lg:h-28 xl:h-32 2xl:h-33 cursor-pointer' key={item.id} src={item.path} alt="" />
         })}
   </div>
 
