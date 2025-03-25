@@ -11,7 +11,7 @@ const MegaDeals = () => {
             alt="More Reasons Banner"
             className="w-full h-auto"
           />
-          <div className="grid grid-cols-2 items-center sm:grid-cols-2 gap-2 mt-2">
+          <div className="grid  grid-cols-2 items-center sm:grid-cols-2 gap-2 mt-2">
             <img
               src="https://f.nooncdn.com/p/pzsku/ZB5B4E87138503D23F313Z/45/_/1725131789/c879a173-43ca-4dd6-ad92-b004a6cd8232.jpg?width=240"
               alt="Featured Reason Product"
@@ -55,7 +55,7 @@ const MegaDeals = () => {
                 <img
                   src={src}
                   alt={`Deal ${index + 1}`}
-                  className="h-40"
+                  className="h-40 flex justify-center items-center object-cover"
                 />
               </div>
             ))}
