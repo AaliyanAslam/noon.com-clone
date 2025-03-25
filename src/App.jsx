@@ -9,6 +9,7 @@ import MegaDeals from './components/MegaDeals'
 import RecommendedForYou from './components/RecommendedForYou'
 import RamzanEssentials from './components/RamzanEssentials'
 import MoreOnFashon from './components/MoreOnFashon'
+import Footer from './components/Footer'
 
 const App = () => {
  
@@ -23,9 +24,9 @@ const App = () => {
     <Categories/>
     <MegaDeals/>
     <RecommendedForYou/>
-    <RamzanEssentials/>\
+    <RamzanEssentials/>
     <MoreOnFashon/>
-    
+    <Footer/>
     
     </>
   )
