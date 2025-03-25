@@ -54,26 +54,25 @@ const NewCarousel = () => {
 
   return (
     <>
-      <div className="grid grid-cols-8 gap-0 max-w-[1280px]  ">
+      <div className="grid md:grid-cols-6 lg:grid-cols-8 gap-0 max-w-[1280px]  ">
         <div className="relative w-full overflow-hidden col-span-8 sm:col-span-6 cursor-pointer">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {images.map((image, index) => (
-              <div
-                key={index}
-                className=" container mx-auto min-w-full  rounded-2xl h-[200px] relative  flex items-center justify-center"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full rounded-2xl object-cover opacity-90"
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white rounded">
-                
-                </div>
-              </div>
+           <div
+           key={index}
+           className="container mx-auto min-w-full rounded-2xl h-[170px] md:h-[240px] lg:h-[190px]  relative flex items-center justify-center"
+         >
+           <img
+             src={image.src}
+             alt={image.alt}
+             className="w-[350px] sm:w-[640px] h-[130px]  sm:h-[150px] md:w-[780px] md:h-[220px] lg:w-[838px] lg:h-[210px] rounded-2xl object-cover opacity-90"
+           />
+           <div className="absolute inset-0 flex flex-col items-center justify-center text-white rounded"></div>
+         </div>
+         
             ))}
           </div>
 
@@ -90,7 +89,7 @@ const NewCarousel = () => {
             →
           </button>
 
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="hidden sm:hidden md:flex -md:block lg-flex -lg:block absolute bottom-4 left-1/2 transform -translate-x-1/2  space-x-2">
             {images.map((_, index) => (
               <div
                 key={index}
@@ -102,7 +101,7 @@ const NewCarousel = () => {
           </div>
         </div>
 
-        <div className="col-span-2 hidden sm:hidden md:block lg:flex xl:flex cursor-pointer">
+        <div className="col-span-2 hidden sm:hidden md:hidden lg:flex xl:flex cursor-pointer">
           <img
             src="https://f.nooncdn.com/mpcms/EN0001/assets/12d3e1cf-7458-4783-aae2-604ae8126d54.png"
             className="w-full h-[200px] object-cover"

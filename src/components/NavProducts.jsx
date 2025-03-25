@@ -5,7 +5,7 @@ const NavProducts = () => {
     <>
       <nav>
         <div className="hidden sm:block">
-<ul className="flex p-2 gap:0 sm:gap-0 md:gap-0 lg:gap-5 xl:gap-5 2xl:gap-5.5 font-semibold text-md items-center cursor-pointer">
+<ul className="flex p-2 gap:0 sm:gap-0 md:gap-0 lg:gap-4.5 xl:gap-4.5 2xl:gap-5.5 font-semibold text-md items-center cursor-pointer">
     <li className=" hover:underline hidden sm:hidden md:hidden lg:block xl:block 2xl:block  text-xs sm:text-sm md:text-md lg:text-base xl:text-base">Electronics</li>
 <li className=" hover:underline hidden sm:hidden md:hidden lg:block xl:block 2xl:block  text-xs sm:text-sm md:text-md lg:text-base xl:text-base">Men's Fashion</li>
 <li className=" hover:underline hidden sm:hidden md:hidden lg:block xl:block 2xl:block  text-xs sm:text-sm md:text-md lg:text-base xl:text-base">Women's Fashion</li>
