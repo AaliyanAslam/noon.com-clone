@@ -91,7 +91,7 @@ const Footer = () => {
 
         <nav className="bg-gray-200 rounded  opacity-80 p-5  flex justify-between">
           <div>
-            <p className="text-xs">We're Alwyas Here To Help</p> <br />{" "}
+            <p className="text-xs">We're Always Here To Help</p> <br />{" "}
             <p className="text-xs opacity-65">
               Reach out to us through any of these support channels
             </p>

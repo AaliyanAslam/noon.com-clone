@@ -10,6 +10,7 @@ import RecommendedForYou from './components/RecommendedForYou'
 import RamzanEssentials from './components/RamzanEssentials'
 import MoreOnFashon from './components/MoreOnFashon'
 import Footer from './components/Footer'
+import FooterBottom from './components/FooterBottom'
 
 const App = () => {
  
@@ -27,6 +28,7 @@ const App = () => {
     <RamzanEssentials/>
     <MoreOnFashon/>
     <Footer/>
+    <FooterBottom/>
     
     </>
   )
