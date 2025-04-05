@@ -11,25 +11,20 @@ import RamzanEssentials from './components/RamzanEssentials'
 import MoreOnFashon from './components/MoreOnFashon'
 import Footer from './components/Footer'
 import FooterBottom from './components/FooterBottom'
+import Login from './pages/Login'
+import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
  
   
   return (
     <>
-    <Navbar/>
-    <NavProducts/>
-    <BottomNav/>
-    <DeliveryLocationNav/>
-    <ExtraOffBanner/>
-    <Categories/>
-    <MegaDeals/>
-    <RecommendedForYou/>
-    <RamzanEssentials/>
-    <MoreOnFashon/>
-    <Footer/>
-    <FooterBottom/>
-    
+   
+    <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
