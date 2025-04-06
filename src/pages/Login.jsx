@@ -1,36 +1,52 @@
-import React,{ useState , useEffect } from 'react'
-import Navbar from '../components/Navbar'
-const Login = () => {
-    const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import { useNavigate } from 'react-router-dom'; 
 
-  const handleLogin = (e) => {
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [tok, setTok] = useState(null);
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Add your login logic here
-    console.log('Login clicked:', email, password);
+    setError('');
+
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        console.log('Login successful:', data.token);
+        setTok(data.token);
+        // Optionally save token
+        localStorage.setItem('token', data.token);
+        // Redirect to dashboard
+      } else {
+        setError(data.message || 'Login failed');
+      }
+    } catch (error) {
+      setError('Something went wrong. Try again later.');
+      console.error('Error:', error);
+    }
   };
 
-useEffect(() => {
-  fetch('http://127.0.0.1:8000/login')
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  })
-
-
-
-}, [])
-
-
-
-
   return (
-
     <>
-    <Navbar/>
+    <Navbar />
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-2xl shadow-xl">
         <h2 className="text-3xl font-bold text-center text-gray-800">Login to Your Account</h2>
+        {error && <p className="text-red-500 text-center">{error}</p>}
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <label className="block text-gray-700">Email</label>
@@ -61,13 +77,13 @@ useEffect(() => {
             Login
           </button>
         </form>
-        <p className="text-sm text-center text-gray-600">
-          Don’t have an account? <a href="/register" className="text-blue-500 hover:underline">Sign up</a>
-        </p>
       </div>
+
+{tok &&  navigate("/")}
+
     </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

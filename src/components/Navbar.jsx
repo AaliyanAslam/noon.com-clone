@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
+  const Token = localStorage.getItem("token");
+
+  
 
 
 
@@ -65,9 +68,11 @@ const Navbar = () => {
 
           <div className=" sm:block md:block lg:block">
             <div className="font-normal text-xs sm:text-sm ms:text:sm lg:text-sm xl:text-sm text-gray-600 flex items-center hover:opacity-70 duration-300 opacity-100 cursor-pointer">
-            <Link to="/login">Login{" "}</Link>
-                
-              
+              {Token ? (
+                <Link to="/login">Logout</Link>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}          
               <span className="ml-1 hidden sm:hidden lg:hidden">
                 <FontAwesomeIcon icon={faUser} />{" "}
               </span>
